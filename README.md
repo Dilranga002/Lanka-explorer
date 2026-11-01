@@ -11,13 +11,6 @@
 
 For Week 03 onwards, do not double-click `index.html` with a file:// URL because `fetch()` needs a web server.
 
-## Group (edit before submission)
-- Group name: [INSERT GROUP NAME]
-- Member 1: [NAME] — Project Lead
-- Member 2: [NAME] — Content Lead
-- Member 3: [NAME] — Data Lead
-- Member 4: [NAME] — UI Lead
-
 ## Destinations
 10 locations spanning Heritage, Beach, Nature and Wildlife, exactly 3 featured.
 
