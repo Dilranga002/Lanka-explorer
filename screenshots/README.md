@@ -1,0 +1,1 @@
+Screen captures are part of the lab submission. Take screenshots from YOUR running website (after downloading photos) at 375px and 1280px in Chrome DevTools. Week 05 also asks for light and dark themes. We have not fabricated screenshot evidence or Lighthouse scores.

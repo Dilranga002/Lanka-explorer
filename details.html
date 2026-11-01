@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Sri Lanka's heritage, beaches, wildlife and nature with Lanka Explorer.">
+<title>Lanka Explorer | Details</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<link rel="icon" type="image/png" href="images/lanka-explorer-symbol.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+ <a href="index.html" class="logo brand-link" aria-label="Lanka Explorer home">
+  <span class="brand-symbol-wrap"><img class="brand-symbol" src="images/lanka-explorer-symbol.png" alt="" width="56" height="56"></span>
+  <span class="brand-name">Lanka <strong>Explorer</strong></span>
+ </a>
+ <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+ <nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="trip.html">My Trip</a></li>
+<li><a href="about.html">About</a></li>
+<li><button type="button" id="theme-toggle" aria-label="Switch color theme">🌙 Dark mode</button></li></ul></nav>
+</header>
+<main>
+<p class="breadcrumbs"><a href="destinations.html">← All destinations</a></p>
+<article id="destination"><p class="no-results">Loading destination...</p></article>
+<section class="content-section"><h2>Weather Now</h2><div id="weather" class="info-panel">Loading weather...</div></section>
+<section class="content-section" aria-labelledby="map-heading">
+  <div class="section-heading"><h2 id="map-heading">Explore the location</h2><p>Drag to move the map, scroll or pinch to zoom, or open Google Maps for directions.</p></div>
+  <div class="map-frame">
+    <div class="map-toolbar">
+      <span class="map-toolbar-title">📍 Destination map</span>
+      <div class="map-toolbar-actions">
+        <button class="map-action" data-map-action="reset" type="button">↺ Reset view</button>
+        <button class="map-action" data-map-action="expand" type="button" aria-expanded="false">⛶ Fullscreen</button>
+        <a class="map-action map-external" id="map-google-link" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">↗ Google Maps</a>
+      </div>
+    </div>
+    <div id="map" role="region" aria-label="Interactive map showing selected Sri Lankan destination">Loading map...</div>
+    <div class="map-help">🖱️ Drag to move · Mouse wheel or +/- to zoom · Esc exits fullscreen</div>
+  </div>
+</section>
+<button id="add-to-trip" type="button" >Add to My Trip</button>
+</main>
+<footer><p>© 2026 Lanka Explorer · Student Mini Project</p><p>Discover Sri Lanka responsibly · <a href="about.html#photo-credits">Photo credits</a></p></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="js/app.js"></script>
+</body>
+</html>

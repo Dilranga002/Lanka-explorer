@@ -1,0 +1,26 @@
+Lanka Explorer - Week 05 Map Fix (Sinhala / English)
+
+Issue: Details page map showed empty dark space and only 2-3 tiles.
+Cause: old class="map-placeholder" had display:grid, which interfered with Leaflet map panes.
+
+Fixes:
+- Proper full-width Leaflet map display (grid placeholder removed)
+- Fit all 10 destinations to the Destinations page map
+- Scroll/pinch to zoom, drag to pan, and +/- zoom buttons
+- Fullscreen / Close map (Esc)
+- Reset view / Show all
+- Destination selector on Destinations page
+- Google Maps external link (opens actual Google Maps in a new tab)
+- Responsive mobile/desktop heights and map redraw after layout changes
+
+RUN IN VISUAL STUDIO CODE:
+1. Extract ZIP. Open Week-05/lanka-explorer folder in VS Code.
+2. Right click index.html > Open with Live Server.
+3. Go to Destinations > Explore on the map.
+4. Try place selector, Show all, Fullscreen and Google Maps buttons.
+5. Open any View details, then test map zoom and reset.
+6. Press Ctrl+Shift+R to hard refresh if previous CSS is cached.
+
+Note: Internet needed to load map tiles (OpenStreetMap), Leaflet CDN and external Google Maps.
+Google Maps is opened externally; no Google Maps API key required.
+Week 01-04 files are unchanged. Only Week 05 code is updated.

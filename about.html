@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Sri Lanka's heritage, beaches, wildlife and nature with Lanka Explorer.">
+<title>Lanka Explorer | About Us</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="images/lanka-explorer-symbol.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+ <a href="index.html" class="logo brand-link" aria-label="Lanka Explorer home">
+  <span class="brand-symbol-wrap"><img class="brand-symbol" src="images/lanka-explorer-symbol.png" alt="" width="56" height="56"></span>
+  <span class="brand-name">Lanka <strong>Explorer</strong></span>
+ </a>
+ <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+ <nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="trip.html">My Trip</a></li>
+<li><a href="about.html" class="active" aria-current="page">About</a></li>
+<li><button type="button" id="theme-toggle" aria-label="Switch color theme">🌙 Dark mode</button></li></ul></nav>
+</header>
+<main>
+<section class="page-intro"><span class="eyebrow">OUR STORY</span><h1>About Lanka Explorer</h1><p>We built Lanka Explorer as our five-week web development mini project. Our goal is to help visitors discover Sri Lanka's heritage, beaches, wildlife and nature with a simple and friendly website.</p></section>
+<section id="brand-story" class="brand-story content-section" aria-labelledby="brand-story-title">
+<div class="brand-art"><img src="images/lanka-explorer-logo.png" width="310" height="312" alt="Lanka Explorer compass, green mountains and tea leaves logo with Discover Sri Lanka tagline" loading="lazy"></div>
+<div class="brand-story-content"><span class="eyebrow">OUR IDENTITY</span><h2 id="brand-story-title">Discover Sri Lanka with Lanka Explorer</h2><p>Our logo brings together a compass, green mountains and tropical leaves — symbols of exploration and Sri Lanka's natural beauty.</p><p>From ancient heritage to scenic hills and beautiful coastlines, Lanka Explorer helps you plan your journey around the island.</p></div>
+</section>
+<section id="team" class="content-section"><h2>Our Team</h2><div class="team-grid"><article><span class="team-avatar">PL</span><h3>[Member 1]</h3><p>Project Lead</p></article>
+<article><span class="team-avatar">CL</span><h3>[Member 2]</h3><p>Content Lead</p></article>
+<article><span class="team-avatar">DL</span><h3>[Member 3]</h3><p>Data Lead</p></article>
+<article><span class="team-avatar">UI</span><h3>[Member 4]</h3><p>UI Lead</p></article></div><p class="tip">Replace the names above with your real group members before submitting.</p></section>
+<section id="enquiry" class="content-section"><h2>Plan Your Trip With Us</h2><form id="enquiry-form" novalidate>
+<div class="form-row"><label for="name">Full name <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" required></div>
+<div class="form-row"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" required></div>
+<div class="form-row"><label for="date">Travel date</label><input id="date" name="date" type="date"></div>
+<div class="form-row"><label for="people">Number of travellers</label><input id="people" name="people" type="number" min="1" max="20" required></div>
+<fieldset><legend>Interests</legend><label><input type="checkbox" name="interest" value="Heritage"> Heritage</label><label><input type="checkbox" name="interest" value="Beach"> Beach</label><label><input type="checkbox" name="interest" value="Nature"> Nature</label><label><input type="checkbox" name="interest" value="Wildlife"> Wildlife</label></fieldset>
+<div class="form-row"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Tell us about your perfect adventure"></textarea></div>
+<p id="form-message" role="status" aria-live="polite"></p><button type="submit" class="btn">Send Enquiry</button><p class="small-note">Demo form only — no message is sent to a server.</p></form></section><section id="photo-credits" class="content-section"><h2>Photo Credits</h2><p>Real photographs of Sri Lankan places are used under Creative Commons licences. See <a href="PHOTO_CREDITS.md">full photo attributions</a> for authors, source links and licences.</p></section>
+</main>
+<footer><p>© 2026 Lanka Explorer · Student Mini Project</p><p>Discover Sri Lanka responsibly · <a href="about.html#photo-credits">Photo credits</a></p></footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

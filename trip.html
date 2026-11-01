@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore Sri Lanka's heritage, beaches, wildlife and nature with Lanka Explorer.">
+<title>Lanka Explorer | My Trip</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="images/lanka-explorer-symbol.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+ <a href="index.html" class="logo brand-link" aria-label="Lanka Explorer home">
+  <span class="brand-symbol-wrap"><img class="brand-symbol" src="images/lanka-explorer-symbol.png" alt="" width="56" height="56"></span>
+  <span class="brand-name">Lanka <strong>Explorer</strong></span>
+ </a>
+ <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+ <nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="trip.html" class="active" aria-current="page">My Trip</a></li>
+<li><a href="about.html">About</a></li>
+<li><button type="button" id="theme-toggle" aria-label="Switch color theme">🌙 Dark mode</button></li></ul></nav>
+</header>
+<main>
+<section class="page-intro"><span class="eyebrow">YOUR ADVENTURE</span><h1>My Trip</h1><p>Build your itinerary and plan entry costs for the whole group.</p></section>
+<div id="trip-summary" class="info-panel" aria-live="polite">Loading your trip...</div>
+<div class="traveller-control"><label for="travellers">Number of travellers</label><input id="travellers" type="number" min="1" max="20" value="1"></div>
+<div class="table-scroll"><table id="trip-table"><thead><tr><th>Destination</th><th>Category</th><th>Fee / person (USD)</th><th>Fee / person (LKR)</th><th>Remove</th></tr></thead><tbody></tbody><tfoot><tr><td colspan="2">Total for all travellers</td><td id="total-usd">USD 0</td><td id="total-lkr">Rs. 0</td><td></td></tr></tfoot></table></div>
+<button id="clear-trip" type="button" class="secondary-btn">Clear trip</button>
+<p class="tip">Entry fees are educational sample values. Always check current prices before travelling.</p>
+</main>
+<footer><p>© 2026 Lanka Explorer · Student Mini Project</p><p>Discover Sri Lanka responsibly · <a href="about.html#photo-credits">Photo credits</a></p></footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
